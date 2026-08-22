@@ -37,8 +37,6 @@ def main():
             config_data, "Medallion Initial Loading", default_catalog
         )
 
-        print(config_data)
-
         list_databases(spark)
 
         inital_loading_gold(spark, config_data, default_catalog)
