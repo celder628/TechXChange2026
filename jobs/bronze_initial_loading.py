@@ -19,8 +19,6 @@ from medallion import (
     inital_loading_bronze
 )
 
-import os
-
 def main():
 
     spark = None
@@ -34,8 +32,6 @@ def main():
         spark = connect_to_spark(
             config_data, "Medallion Initial Loading", default_catalog
         )
-
-        print(config_data)
 
         list_databases(spark)
 
