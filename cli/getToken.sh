@@ -1,5 +1,5 @@
 set -a 
-source env 
+source env.sh
 set +a 
 
 if response=$(curl -k -s -w "%{http_code}" --request POST \
@@ -9,9 +9,6 @@ if response=$(curl -k -s -w "%{http_code}" --request POST \
         "username": "'"${WXD_USERNAME}"'",
         "api_key": "'"${WXD_API_KEY}"'"
       }' 2>&1); then
-
-    echo $response
-
 
     http_code="${response: -3}"
 
