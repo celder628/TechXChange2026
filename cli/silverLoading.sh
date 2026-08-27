@@ -18,6 +18,7 @@ if response=$(curl -k -s -w "%{http_code}" --request POST \
         "spark.hadoop.fs.s3a.bucket.wx-data-medallion-src.secret.key": "'"${S3_SECRET_KEY}"'"
         },
         "env": {
+          "BASE_URL": "'"${BASE_URL}"'",
           "APP_ENV": "'"${APP_ENV}"'",
           "WXD_USERNAME": "'"${WXD_USERNAME}"'",
           "WXD_API_KEY": "'"${WXD_API_KEY}"'",
