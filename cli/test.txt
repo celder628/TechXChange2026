@@ -1,3 +1,0 @@
-curl -k --request POST https://cpd-cpd.apps.itz-lqgsjp.infra01-lb.wdc07.techzone.ibm.com/icp4d-api/v1/authorize  --data '{"username": "cpadmin","api_key": "LlRpKSRJDHCzNC4I8tQ9zijBMDCfCavby60bwidm"}' -H "Content-Type: application/json"
-
-
